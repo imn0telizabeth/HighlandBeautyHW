@@ -71,13 +71,26 @@ footer a{
     color:#194035;
     text-decoration: none;
 }
-
+/*----Beth played around with the Widths and Padding----*/
 @media only screen and (min-width:700px){
     /* ---- Desktop styles below ---- */
     .col{
-        width:45%;
+        width:28%;
         float:left;
         padding:2%;
+    }
+    .row::after{
+        display: table;
+        clear:both;
+        content:"";
+    }
+}
+@media only screen and (min-width:1200px){
+    /* ---- VERY LARGE Desktop styles below ---- */
+    .col{
+        width:27%;
+        float:left;
+        padding:3%;
     }
     .row::after{
         display: table;
