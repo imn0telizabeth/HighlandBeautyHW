@@ -1,0 +1,87 @@
+/*Some colors based on: https://www.w3schools.com/colors/colors_palettes.asp */
+
+body{
+  background: #d6cbd3;
+  font-size: 1em;
+  margin:0;
+  padding:0;
+}
+
+img{
+    /* ------ MAX WIDTH ------ */
+    max-width:100%;
+}
+
+h1{
+
+}
+
+#logo {
+    /* ------ MAX WIDTH ------ */
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Grid CSS on W3 Schools: https://www.w3schools.com/cssref/pr_grid-auto-flow.asp */
+nav{
+    display: grid;
+    /* Change previous grid */
+    grid-auto-flow: column;
+    grid-gap: auto;
+    background: #f0f0f0;
+    padding:1.5% auto;
+}
+
+nav a{
+    margin: 10px auto;
+    text-decoration: none;
+    color: #bb7e82;
+    font-weight: bold;
+}
+
+h2{
+    font-size: 1.2em;
+}
+
+p{
+
+}
+
+#wrapper{
+    margin: 15px auto;
+    width:90%;
+}
+
+.center{
+    display: block;
+    margin: 0 auto;
+    width:100%;
+}
+.col{
+   width:100%;
+}
+
+footer{
+    text-align: center;
+    background-color: #b1cbbb;
+    padding:20px 0;
+}
+footer a{
+    color:#194035;
+    text-decoration: none;
+}
+
+@media only screen and (min-width:700px){
+    /* ---- Desktop styles below ---- */
+    .col{
+        width:45%;
+        float:left;
+        padding:2%;
+    }
+    .row::after{
+        display: table;
+        clear:both;
+        content:"";
+    }
+}
